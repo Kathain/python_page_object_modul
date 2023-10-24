@@ -11,9 +11,11 @@ user_name = driver.find_element(By.CSS_SELECTOR, '#user-name')
 user_name.send_keys('standard_user')
 password = driver.find_element(By.CSS_SELECTOR, '#password')
 password.send_keys('secret_sauce')
-button_login = driver.find_element(By.CSS_SELECTOR, '#login-button')
-time.sleep(3)
-button_login.click()
+time.sleep(5)
+user_name.clear()
+time.sleep(5)
+password.clear()
+time.sleep(5)
 
 
 

@@ -15,6 +15,9 @@ button_login = driver.find_element(By.CSS_SELECTOR, '#login-button')
 time.sleep(2)
 button_login.click()
 now_date = datetime.datetime.utcnow().strftime(' %Y.%m.%d. %H:%M')
+time.sleep(5)
+driver.execute_script("window.scroll(0,500)")
+time.sleep(5)
 name_screenshot = 'screenshot' + now_date + '.png'
 driver.save_screenshot('screenshots/' + name_screenshot)
 

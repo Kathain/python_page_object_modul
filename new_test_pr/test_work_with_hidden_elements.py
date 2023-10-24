@@ -15,5 +15,10 @@ button_login = driver.find_element(By.CSS_SELECTOR, '#login-button')
 time.sleep(3)
 button_login.click()
 
-
-
+menu = driver.find_element(By.XPATH, "//button[@id='react-burger-menu-btn']")
+menu.click()
+time.sleep(3)
+link_about = driver.find_element(By.XPATH, "//a[@id='about_sidebar_link']")
+time.sleep(3)
+link_about.click()
+time.sleep(3)
