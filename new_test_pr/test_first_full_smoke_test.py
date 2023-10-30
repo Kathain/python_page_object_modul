@@ -19,7 +19,7 @@ product_1 = driver.find_element(By.CSS_SELECTOR, '#item_4_title_link')
 value_product_1 = product_1.text
 print(value_product_1)
 
-price_product_1 = driver.find_element(By.XPATH,"(//div[@class='inventory_item_price'])[1]")
+price_product_1 = driver.find_element(By.XPATH, "(//div[@class='inventory_item_price'])[1]")
 value_price_pr_1 = price_product_1.text
 print(value_price_pr_1)
 
